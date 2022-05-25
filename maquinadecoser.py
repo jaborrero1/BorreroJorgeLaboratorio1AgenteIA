@@ -327,4 +327,8 @@ def maquina_coser():
                 costo += 1 
                 print("La maquina de coser esta realizando buenas puntadas en el Puesto 1")
                 #Se obtiene el costo actual
-                print("El costo actual es de: " + str(costo)) 
+                print("El costo actual es de: " + str(costo))
+            else:
+                #La maquina de coser se encuentra realizando buenas puntadas
+                print("La maquina de coser del Puesto 1 se encuentra realizando buenas puntadas")
+                print("No se realiza ninguna acción. El costo actual es de: " + str(costo)) 
