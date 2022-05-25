@@ -359,7 +359,7 @@ def maquina_coser():
         print("La ubicación ingresada es incorrecta")
 
         #Todas las Puntadas son Buenas
-        print("Estado del Objetivo: " + str(estado_objetivo))
-        print("Medición del desempeño " + str(costo))
+        print("Estado Objetivo: " + str(estado_objetivo))
+        print("Medición de desempeño " + str(costo))
 
 maquina_coser();
