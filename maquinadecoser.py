@@ -156,4 +156,42 @@ def maquina_coser():
             #Se obtiene el costo actual 
             print("El costo actual es de: " + str(costo)) 
            
-            
+            if(estado_ubicacion2 == '1'):
+                #Si la maquina de coser esta en el puesto 1 se encuentra realizando malas puntadas
+                print("La maquina de coser del Puesto 1 se encuentra realizando malas puntadas")
+                print("La maquina de coser esta en el Puesto 1") 
+                #Se incrementa el costo por el puesto de la maquina de coser
+                costo += 1
+                #Se obtiene el costo actual
+                print("El costo actual es de: " + str(costo)) 
+                #La maquina de coser esta realizando buenas puntada
+                estado_objetivo['Puesto1'] ='0'
+                #El costo se ira incrementado cada vez que la maquina de coser realice buenas puntadas
+                costo += 1 
+                print("La maquina de coser esta realizando buenas puntadas en el Puesto 1")
+                #Se obtiene el costo actual 
+                print("El costo actual es de : " + str(costo)) 
+            else:
+                #La maquina de coser se encuentra realizando buenas puntadas
+                print("La maquina de coser del Puesto 1 se encuentra realizando buenas puntadas")
+                print("No se realiza ninguna acción. El costo actual es de: "  + str(costo))
+ 
+            if(estado_ubicacion3 == '1'):
+                #Si la maquina de coser del Puesto 3 se encuentra realizando malas puntadas
+                print("La maquina de coser del Puesto 3 se encuentra realizando malas puntadas")
+                print("La maquina de coser esta ubicado en el Puesto 3") 
+                #Se incrementa el costo por a ubicacion de la maquina de coser
+                costo += 1
+                #Se obtiene el costo actual
+                print("El costo actual es de: " + str(costo)) 
+                #La maquina de coser se encuentra realizando buenas puntadas
+                estado_objetivo['Puesto3'] ='0'
+                #El costo incrementara cada vez que realice buenas puntadas
+                costo += 1 
+                print("La maquina de coser esta realizando buenas puntadas en el Puesto 3")
+                #Se obtiene el costo actual
+                print("El costo actual es de: " + str(costo))  
+            else:
+                #La maquina de coser se encuentra realizando buenas puntadas
+                print("La maquina de coser ubicada en el Puesto 3 se encuentra realizando buenas puntadas")
+                print("No se realiza ninguna acción. El costo actual es de: " + str(costo))
