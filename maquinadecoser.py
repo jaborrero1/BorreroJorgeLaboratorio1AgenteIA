@@ -352,3 +352,14 @@ def maquina_coser():
                     #La maquina de coser se encuentra realizando buenas puntadas
                     print("La maquina de coser del Puesto 3 se encuentra realizando buenas puntadas")
                     print("No se realiza ninguna acción. El costo actual es de: " + str(costo))
+        else:      
+            print("El estado ingresado no es el correcto")
+             
+    else:
+        print("La ubicación ingresada es incorrecta")
+
+        #Todas las Puntadas son Buenas
+        print("Estado del Objetivo: " + str(estado_objetivo))
+        print("Medición del desempeño " + str(costo))
+
+maquina_coser();
