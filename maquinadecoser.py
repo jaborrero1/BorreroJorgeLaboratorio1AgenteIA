@@ -129,3 +129,31 @@ def maquina_coser():
 
         else:      
             print("El estado ingresado no es el correcto")
+
+    #PUESTO 2
+
+    #El confeccionista ingresa al Puesto 2
+    elif (ingresar_ubicacion  == 'Puesto2'):
+        # El confeccionista indica si la maquina de coser se encuentra realizando buenas 
+        # y malas puntadas (0/1) en la ubicación señalada
+        estado_ubicacion2 = input("Ingresar en la ubicacion del Puesto 1: ")
+        # El confeccionista indica si la maquina de coser se encuentra realizando buenas
+        # y malas puntadas (0/1) en la ubicación señalada
+        estado_ubicacion3 = input("Ingresar en la ubicacion del Puesto 3: ")
+        #Se muestran los resultados deseados
+        print("Destino Deseado Obtenido:" + str(estado_objetivo))
+        #Se muestra la ubicacion de la maquina de coser en el puesto 2
+        print("La maquina de coser se encuentra en el Puesto 2")
+
+        if(ingresar_estado == '1'):
+            #La maquina de coser se encuentra en el Puesto2 se encuentra realizando buenas puntadas
+            print("La maquina de coser se encuentra realizando malas puntadas")
+            #La maquina de coser se encuentra realizando buenas puntadas
+            estado_objetivo['Puesto2'] ='0'
+            #El costo aumentara cada que la maquina de coser realice buenas puntadas
+            costo += 1 
+            print("La maquina de coser esta realizando buenas puntadas en el Puesto 2")
+            #Se obtiene el costo actual 
+            print("El costo actual es de: " + str(costo)) 
+           
+            
